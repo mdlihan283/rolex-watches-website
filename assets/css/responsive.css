@@ -1,0 +1,137 @@
+@media(max-width: 414px) {
+    .container {
+        width: 95%;
+        overflow: hidden;
+    }
+
+    .sideIcon i:last-child {
+        display: block !important;
+    }
+
+    .menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        background: var(--white);
+        z-index: 999;
+        width: 100%;
+        padding-top: 80px;
+        height: 100%;
+        opacity: 0;
+        transition: 0.3s ease;
+        -webkit-transition: 0.3s ease;
+        -moz-transition: 0.3s ease;
+        -ms-transition: 0.3s ease;
+        -o-transition: 0.3s ease;
+    }
+
+    .activeMenu {
+        right: 0px !important;
+        opacity: 1 !important;
+    }
+
+    .logo {
+        width: 22% !important;
+    }
+
+    .sideIcon {
+        width: 26% !important;
+    }
+
+    ul#mainMenuItem {
+        flex-direction: column;
+    }
+
+    ul#mainMenuItem li a {
+        padding: 12px;
+        display: block;
+        font-size: 25px;
+        font-weight: 600;
+    }
+
+    #menuClose {
+        display: block !important;
+    }
+
+    .menuClose {
+        position: absolute;
+        right: 34px;
+        top: 20px;
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    .productsWrapper {
+        max-width: 100% !important;
+        justify-content: space-between;
+    }
+
+    .singleProducts {
+        margin-right: 0px !important;
+        width: 46%;
+        margin-bottom: 30px;
+    }
+
+    .singleArivial {
+        width: 100%;
+        margin-bottom: 100px;
+        height: 400px !important;
+    }
+
+    .singleArivial:hover {
+        height: 450px !important;
+    }
+
+    .arivialWrapper {
+        flex-wrap: wrap;
+    }
+
+    .menuClose {
+        display: block !important;
+    }
+
+    .singleArivial img {
+        width: 45%;
+    }
+
+    .singleArivial .sale {
+        left: 270px;
+        top: 20px;
+    }
+
+    .subsWrapper {
+        padding: 45px 30px;
+    }
+
+    .subsLeftContent {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .subsRightInput {
+        width: 100%;
+    }
+
+    input#email {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    div#inputBox {
+        height: 131px;
+    }
+
+    .inputBoxBtn {
+        width: 105%;
+    }
+
+    .singleFoot {
+        width: 100%;
+        margin-bottom: 60px;
+    }
+
+    .singleFoot:last-child {
+        margin-bottom: -60px;
+    }
+}
