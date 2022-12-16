@@ -145,7 +145,7 @@ ul#mainMenuItem li a:hover {
 
 .sideIcon i {
   font-size: 20px;
-  color: var(--black);
+  color: #222;
   transition: all 0.3s ease 0s;
 }
 
