@@ -4,6 +4,14 @@
         overflow: hidden;
     }
 
+    section {
+        padding: 50px 0px;
+    }
+
+    .secTitle h1 {
+        font-size: 20px;
+    }
+
     .sideIcon i:last-child {
         display: block !important;
     }
@@ -49,6 +57,38 @@
         font-weight: 600;
     }
 
+    .slideLeftContent {
+        width: 100% !important;
+        position: absolute;
+        top: 500px;
+        left: 0px;
+        padding: 20px;
+    }
+
+    .slideRightImg {
+        position: absolute;
+        right: 0px;
+        width: 65%;
+        top: 0;
+    }
+
+    .socialName {
+        left: -110px;
+        top: -300px;
+    }
+
+    .slideLCont {
+        margin-left: 0px !important;
+    }
+
+    .slideLCont h1 {
+        font-size: 35px;
+    }
+
+    section#featured {
+        margin-top: 829px;
+    }
+
     #menuClose {
         display: block !important;
     }
@@ -74,7 +114,7 @@
 
     .singleArivial {
         width: 100%;
-        margin-bottom: 100px;
+        margin-bottom: 50px;
         height: 400px !important;
     }
 
@@ -95,8 +135,8 @@
     }
 
     .singleArivial .sale {
-        left: 270px;
-        top: 20px;
+        left: 200px;
+        top: 0px;
     }
 
     .subsWrapper {
@@ -133,5 +173,100 @@
 
     .singleFoot:last-child {
         margin-bottom: -60px;
+    }
+
+    .leftStoryImg {
+        width: 280px;
+        height: 280px;
+    }
+
+    .leftStoryImg img {
+        right: -30px;
+        top: -30px;
+    }
+
+    .rightStoryContent {
+        width: 100%;
+    }
+
+    .rightStoryContent .secTitle {
+        text-align: center;
+    }
+
+    .rightStoryContent .secTitle h1 {
+        font-size: 20px;
+    }
+
+    .rightStoryContent .secTitle h1::before {
+        left: 50%;
+    }
+
+    .rightStoryContent h1 {
+        font-size: 21px;
+        margin-bottom: -15px;
+        line-height: 30px;
+    }
+
+    .testLeft {
+        width: 100%;
+    }
+
+    .testRight {
+        width: 250px;
+        height: 250px;
+    }
+
+    .testQoute {
+        margin-bottom: 15px;
+    }
+
+    .testSingleBox {
+        width: 72%;
+        margin-bottom: 60px;
+    }
+
+    .testBoxContent h4 {
+        font-size: 17px;
+    }
+
+    .singleTest p {
+        font-size: 14px;
+    }
+
+    section#testomonial {
+        margin: 0;
+        padding: 0;
+    }
+
+    .testRight img {
+        width: 250px;
+        left: 30px;
+        bottom: -27px;
+    }
+
+    section#arivial {
+        margin: 0px;
+    }
+
+    section#subscription {
+        margin: 0px;
+    }
+
+    section#story {
+        margin: 0px;
+    }
+
+    section#products {
+        margin: 0px;
+    }
+
+    .singleFeatured {
+        width: 100%;
+        margin-bottom: 40px;
+        height: 370px;
+    }
+
+    .singleFeatured:hover {
+        height: 440px;
     }
 }
