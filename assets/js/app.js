@@ -32,3 +32,45 @@ mobileBar.addEventListener("click", () => {
 menuClose.addEventListener("click", () => {
   menu.classList.remove("activeMenu");
 });
+
+// dark mode work
+let root = document.querySelector(":root");
+let rootStyle = getComputedStyle(root);
+let white = rootStyle.getPropertyValue("--white");
+let black = rootStyle.getPropertyValue("--black");
+let grayBlack = rootStyle.getPropertyValue("--grayBlack");
+let grayWhite = rootStyle.getPropertyValue("--grayWhite");
+let btnColor = rootStyle.getPropertyValue("--btnColor");
+
+let darkMood = document.getElementById("darkMood");
+
+darkMood.addEventListener("click", () => {
+  if (!localStorage.getItem("dark")) {
+    localStorage.setItem("dark", "true");
+    location.reload();
+  } else {
+    location.reload();
+    localStorage.removeItem("dark");
+  }
+
+  // darkmood icon changing
+  if (darkMood.classList.contains("fa-moon")) {
+    darkMood.classList.remove("fa-moon");
+    darkMood.classList.add("fa-sun");
+  } else {
+    darkMood.classList.add("fa-moon");
+    darkMood.classList.remove("fa-sun");
+  }
+});
+
+function darkMode() {
+  if (localStorage.getItem("dark")) {
+    root.style.setProperty("--grayBlack", "#ffffff");
+    root.style.setProperty("--whiteFb", "#1F1F1F");
+    root.style.setProperty("--black", white);
+    root.style.setProperty("--btnColor", "#ffffff");
+  } else {
+    return false;
+  }
+}
+darkMode();
