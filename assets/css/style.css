@@ -607,7 +607,51 @@ input#email {
   font-size: 16px;
 }
 
+input#email:focus {
+  outline: none;
+}
+
 .inputBoxBtn {
   border: none;
   padding: 21px 25px !important;
+}
+
+footer#footer {
+  padding: 60px 0px;
+}
+
+.footerWrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 60px;
+}
+
+.singleFoot {
+  width: 25%;
+}
+
+.singleFoot h3 {
+  font-size: 20px;
+  margin-bottom: 25px;
+  color: var(--grayBlack);
+}
+
+.singleFoot ul li {
+  color: var(--grayBlack);
+  line-height: 35px;
+  font-size: 16px;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+ul#social {
+  display: flex;
+}
+
+ul#social li {
+  display: block;
+  padding: 10px;
+  font-size: 20px;
+  cursor: pointer;
 }
