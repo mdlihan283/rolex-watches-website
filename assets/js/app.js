@@ -1,3 +1,4 @@
+// scrolling animation topBar
 let topBar = document.getElementById("topBar");
 window.onscroll = () => {
   let scroll = scrollY;
