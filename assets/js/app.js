@@ -41,6 +41,10 @@ let black = rootStyle.getPropertyValue("--black");
 let grayBlack = rootStyle.getPropertyValue("--grayBlack");
 let grayWhite = rootStyle.getPropertyValue("--grayWhite");
 let btnColor = rootStyle.getPropertyValue("--btnColor");
+let borderWhite = rootStyle.getPropertyValue("--borderWhite");
+let borderBlack = rootStyle.getPropertyValue("--borderBlack");
+let darkBlackW = rootStyle.getPropertyValue("--darkBlackW");
+let darkBlackB = rootStyle.getPropertyValue("--darkBlackB");
 
 let darkMood = document.getElementById("darkMood");
 
@@ -69,6 +73,7 @@ function darkMode() {
     root.style.setProperty("--whiteFb", "#1F1F1F");
     root.style.setProperty("--black", white);
     root.style.setProperty("--btnColor", "#ffffff");
+    root.style.setProperty("--borderWhite", borderBlack);
   } else {
     return false;
   }

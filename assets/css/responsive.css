@@ -12,7 +12,7 @@
         position: fixed;
         top: 0;
         right: -100%;
-        background: var(--white);
+        background: var(--whiteFb);
         z-index: 999;
         width: 100%;
         padding-top: 80px;

@@ -8,6 +8,14 @@
   --black: #000000;
   --grayBlack: #262626;
   --btnColor: #2b2b2b;
+  --darkBlackW: #2B2B2B;
+  --darkBlackB: #3D3D3D;
+  --borderWhite: 1px solid #F0F0F0;
+  --borderBlack: 1px solid #333333;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 * {
@@ -246,14 +254,14 @@ ul#mainMenuItem li a:hover {
   margin-left: -9px;
   transition: all 0.3s ease 0s;
   border-radius: 2px;
-  background: var(--grayBlack) !important;
+  background: var(--darkBlackW) !important;
   color: var(--white) !important;
   padding: 18px 25px !important;
 }
 
 .btnBlack:hover {
   cursor: pointer;
-  background: var(--btnColor);
+  background: var(--darkBlackB);
 }
 
 .secTitle {
@@ -264,7 +272,7 @@ ul#mainMenuItem li a:hover {
 .secTitle h1 {
   font-size: 25px;
   position: relative;
-  margin-top: 10px;
+  margin-top: 40px;
 }
 
 .secTitle h1::before {
@@ -290,7 +298,7 @@ ul#mainMenuItem li a:hover {
   width: 30%;
   height: 350px;
   padding: 30px;
-  border: 1px solid rgb(240, 240, 240);
+  border: var(--borderWhite);
   position: relative;
   transition: all 0.3s ease 0s;
 }
@@ -410,7 +418,7 @@ ul#mainMenuItem li a:hover {
 
 .singleProducts {
   width: 30%;
-  border: 1px solid rgb(240, 240, 240);
+  border: var(--borderWhite);
   padding: 20px;
   position: relative;
   margin-bottom: 30px;
@@ -448,7 +456,7 @@ ul#mainMenuItem li a:hover {
 .shopCart {
   width: 30px;
   height: 30px;
-  background: var(--grayBlack);
+  background: var(--darkBlackW);
   color: var(--white);
   font-size: 12px;
   display: grid;
@@ -485,7 +493,7 @@ ul#mainMenuItem li a:hover {
 }
 
 .testQoute {
-  background: var(--white);
+  background: var(--whiteFb);
   box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
   width: 45px;
   height: 45px;
@@ -558,6 +566,7 @@ ul#mainMenuItem li a:hover {
   padding: 2px 0px;
   transform: rotate(0deg);
   transition: all 0.3s ease 0s;
+  color: var(--whiteFb) !important;
 }
 
 .singleArivial img {
@@ -753,6 +762,8 @@ aside#cartSection h3 {
   height: 28px;
   font-size: 15px;
   cursor: pointer;
+  background: var(--whiteFb);
+  border: var(--borderWhite);
 }
 
 .bottomCart {
